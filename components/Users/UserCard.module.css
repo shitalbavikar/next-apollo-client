@@ -11,10 +11,10 @@
 }
 
 .userName {
-    color:darkslateblue;
-    font-weight: bold;
+    color: #eae9f0;
+    font-weight: 700;
     font-size: 16px;
-    background-color: lightsteelblue;
+    background-color: #7062be;
 }
 
 .logo{

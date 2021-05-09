@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { ApolloClient, InMemoryCache } from \"@apollo/client\";\nexport const client = new ApolloClient({\n  uri: \"https://whispering-headland-98128.herokuapp.com/\",\n  cache: new InMemoryCache()\n}); // alternate localhost server url: http://localhost:4000/graphql/","map":null,"metadata":{},"sourceType":"module"}

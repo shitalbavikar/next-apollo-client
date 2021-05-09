@@ -25,13 +25,13 @@
     border-radius: 0.25rem;
     margin: 0 auto;
     display: block;
-    background: #0067b8;
+    background: #44359e;;
     color: #fff;
     cursor: pointer;
     text-align: center;
 }
 .loadMoreButton:hover { 
-    background: lightsteelblue;
-    color:darkslateblue;
+    background: #18067c;;
+    color:#eae9f0;
  }
 

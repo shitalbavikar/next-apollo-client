@@ -13,19 +13,8 @@ export const Users = () => {
   const { loading, error, data, fetchMore } = useQuery(GET_USERS_INFO, {
     variables: { after: null }
   });
-  const handleLoadMoreClick = (event: any) => {
-    console.log(messageRef.current && messageRef.current.contains(event.target));
-    if (messageRef.current && messageRef.current.contains(event.target)) {
-      messageRef.current.scrollIntoView({ block: 'nearest', behavior: 'smooth',  inline: "start" });
-    }
-  }
- 
-  useEffect(() => {
-    document.addEventListener('click', handleLoadMoreClick, true);
-    return () => {
-        document.removeEventListener('click', handleLoadMoreClick, true);
-    };
-}, []);
+  
+  useEffect(() => messageRef.current?.scrollIntoView({behavior: "smooth"}));
 
   const loadMoreUsersHandler = () => {
     const {endCursor} = data.users.pageInfo;

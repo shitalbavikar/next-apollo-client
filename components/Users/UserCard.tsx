@@ -1,4 +1,4 @@
-import styles from './userCard.module.css';
+import styles from './UserCard.module.css';
 
 interface IUserCard {
   userInfo: {
